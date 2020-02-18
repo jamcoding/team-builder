@@ -24,10 +24,13 @@ const Form = props => {
         <form onSubmit={submitMember}>
             <label htmlFor="name">Name:</label>
             <input type="text" placeholder="Enter name" id="name" name="name" value={member.name} onChange={inputChanges} />
+            <br />
             <label htmlFor="email">Email:</label>
             <input type="email" placeholder="Enter email" id="email" name="email" value={member.email} onChange={inputChanges} />
+            <br />
             <label htmlFor="role">Role:</label>
             <input type="text" placeholder="Enter role" id="role" name="role" value={member.role} onChange={inputChanges} />
+            <br />
             <button type="submit">Add member</button>
         </form>
     )
