@@ -5,10 +5,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #BDC3C7;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+Form {
+  width: 40%;
+  margin: 20px auto;
+}
+
+.card {
+  width: 40%;
+  margin: 30px auto 40px;
+  border: thin solid black;
+  text-align: center;
+}
+
+.card:first-child {
+  display: none;
 }

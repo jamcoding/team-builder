@@ -1,16 +1,23 @@
 import React from "react";
+import { Container, Row, Col, Card, CardBody, CardText } from "reactstrap";
 
 const FormCard = props => {
     return (
-        <div className="card">
-            {props.members.map(member => (
-                <div className="member-card" key={member.id}>
-                    <p>{member.name}</p>
-                    <p>{member.email}</p>
-                    <p>{member.role}</p>
-                </div>
-            ))}
-        </div>
+        <Row>
+            <Container>
+                <Col>
+                    {props.members.map(member => (
+                        <Card key={member.id}>
+                            <CardBody>
+                                <CardText>{member.name}</CardText>
+                                <CardText>{member.email}</CardText>
+                                <CardText>{member.role}</CardText>
+                            </CardBody>
+                        </Card>
+                    ))}
+                </Col>
+            </Container>
+        </Row>
     )
 }
 

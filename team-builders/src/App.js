@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import Form from "./components/Form";
+import FormInput from "./components/FormInput";
 import FormCard from "./components/FormCard";
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className="App">
-      <Form addNewMember={addNewMember} />
+      <FormInput addNewMember={addNewMember} />
       <FormCard members={members} />
     </div>
   );
